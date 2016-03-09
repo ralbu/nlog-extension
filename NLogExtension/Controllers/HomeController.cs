@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NLog;
 
 namespace NLogExtension.Controllers
 {
     public class HomeController : Controller
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+
         public ActionResult Index()
         {
+            Logger.Debug("Sample debug message");
+
             return View();
         }
 
