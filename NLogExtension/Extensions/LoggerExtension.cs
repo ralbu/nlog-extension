@@ -6,7 +6,7 @@ namespace NLogExtension.Extensions
     {
         public static void ActionInit(this ILogger logger, string message)
         {
-            logger.Debug($"ACTION-001 {message}");
+            logger.Debug($"APP-001 {message}");
         }
         public static void Performance(this ILogger logger, string message)
         {
